@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Login Form -->
+    <div id="login-form" class="form-container">
+        <h2 class="form-heading">Login</h2>
+        <input type="text" id="username" placeholder="Username" class="input-field" required>
+        <input type="password" id="password" placeholder="Password" class="input-field" required>
+        <button onclick="login()" class="btn">Login</button>
+        <p>Don't have an account? <a href="javascript:void(0)" onclick="showRegisterForm()" class="link">Register</a></p>
+    </div>
+
+    <!-- Register Form -->
+    <div id="register-form" class="form-container" style="display:none;">
+        <h2 class="form-heading">Register</h2>
+        <input type="text" id="new-username" placeholder="Username" class="input-field" required>
+        <input type="password" id="new-password" placeholder="Password" class="input-field" required>
+        <button onclick="register()" class="btn">Register</button>
+        <p>Already have an account? <a href="javascript:void(0)" onclick="showLoginForm()" class="link">Login</a></p>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div id="main-dashboard" class="dashboard-container" style="display:none;">
+        <h1 class="dashboard-heading">Project Management</h1>
+        <button onclick="createProject()" class="btn-create-project">Create New Project</button>
+        <ul id="project-list" class="project-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

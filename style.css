@@ -1,0 +1,152 @@
+/* Reset basic styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Form Container Styling */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+/* Form Heading */
+.form-heading {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input Fields Styling */
+.input-field {
+    padding: 12px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons Styling */
+button {
+    padding: 12px;
+    margin: 10px 0;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Links Styling */
+.link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Main Dashboard */
+.dashboard-container {
+    display: none;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Dashboard Heading */
+.dashboard-heading {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Button to Create Project */
+.btn-create-project {
+    background-color: #28a745;
+    margin-bottom: 20px;
+}
+
+/* Project List */
+.project-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-item {
+    background-color: #ffffff;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Name Styling */
+.project-name {
+    font-size: 18px;
+    color: #007bff;
+    flex: 1;
+}
+
+/* Progress Text */
+.project-progress {
+    font-size: 16px;
+    color: #555;
+    margin-left: 10px;
+}
+
+/* Progress Bar Styling */
+.progress-bar-container {
+    width: 100%;
+    height: 8px;
+    background-color: #f4f7fc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #4caf50;
+    width: 0;
+}
+
+/* Input for Progress */
+.project-progress-input {
+    width: 60px;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
